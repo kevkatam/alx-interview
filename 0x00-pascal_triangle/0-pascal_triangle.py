@@ -19,5 +19,5 @@ def pascal_triangle(n):
             else:
                 prev_row = triangle[row - 1]
                 current_row.append(prev_row[i - 1] + prev_row[i])
-                triangle.append(current_row)
+        triangle.append(current_row)
     return triangle
