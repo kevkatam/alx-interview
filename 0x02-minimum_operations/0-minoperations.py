@@ -8,7 +8,7 @@ def minOperations(n):
     """ function that calculates the fewest number of operations needed
     to result in exactly n H characters in the file.
     """
-    if not n:
+    if n == 1:
         return 0
     arr = []
     while n % 2 == 0:
