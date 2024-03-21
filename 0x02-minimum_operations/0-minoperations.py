@@ -9,11 +9,15 @@ def minOperations(n):
     to result in exactly n H characters in the file.
     """
     op = 0
-    clip = 2
+    add = 1
+    car = 0
 
-    while n > 1:
-        while n % clip == 0:
-            op += clip
-            n /= clip
-        clip += 1
+    while add < n:
+        if n % add == 0:
+            car = add
+            add *= 2
+            op += 1
+        else:
+            add += car
+        op += 1
     return op
