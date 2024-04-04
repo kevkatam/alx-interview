@@ -12,7 +12,7 @@ def validUTF8(data):
         if i <= 191 and i >= 128:
             if not valid:
                 return False
-            count -= 1
+            valid -= 1
         else:
             if valid:
                 return False
